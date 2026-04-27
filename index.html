@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LifeLine Blood Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="topbar">
+  This is a temporary development preview
+</div>
+
+<!-- HEADER -->+
+<header>
+  <div class="logo">🩸 LifeLine <span>Blood Connect</span></div>
+  <div class="nav">
+    <a>Emergency Search</a>
+    <a class="active">Donor Directory</a>
+  </div>
+  <button class="register-btn" onclick="openForm()">Register as Donor</button>
+</header>
+
+<!-- TITLE -->
+<section class="title-section">
+  <h1>Donor Directory</h1>
+  <p>Browse and contact registered blood donors</p>
+</section>
+
+<!-- FILTER -->
+<div class="filter-box">
+  <select id="bloodGroup">
+    <option value="">All Groups</option>
+    <option>B+</option>
+    <option>A+</option>
+    <option>O+</option>
+    <option>AB+</option>
+    <option>AB-</option>
+     <option>O-</option>
+      <option>A-</option>
+      <option>B-</option>
+
+  </select>
+
+  <input type="text" id="location" placeholder="Search city">
+
+  <button onclick="filterDonors()">Available Only</button>
+</div>
+
+<!-- DONOR LIST -->
+<div id="donorList" class="donor-grid"></div>
+
+<!-- REGISTER FORM MODAL -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <h2>Register Donor</h2>
+
+    <input id="name" placeholder="Name">
+    <input id="city" placeholder="City">
+    <input id="phone" placeholder="Phone">
+
+    <select id="blood">
+      <option>B+</option>
+      <option>A+</option>
+      <option>O+</option>
+      <option>AB+</option>
+      <option>AB-</option>
+      <option>O-</option>
+      <option>A-</option>
+      <option>B-</option>
+    </select>
+
+    <button onclick="addDonor()">Submit</button>
+    <button onclick="closeForm()">Close</button>
+  </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-box">
+            <h2>🩸 LifeLink</h2>
+            <p>
+                Linking Hearts, Delivering Hope Through Blood. 
+                A project by students of Information Technology.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Become a Donor</a></li>
+                <li><a href="#">Register Hospital</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📍 Vishakhapatnam, Andhra Pradesh</p>
+            <p>📧 lifelink@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 LifeLink. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
